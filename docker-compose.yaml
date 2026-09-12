@@ -22,3 +22,9 @@ services:
       - "3002:3000"
     environment:
       - MESSAGE= ${MESSAGE}
+  db:
+    image: postgres
+    container_name: postgresdb
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
