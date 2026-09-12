@@ -7,8 +7,13 @@ API
   - Minimal API
     - Debe retornar un mensaje incluyendo mi nombre
   - Docker
-- docker run -d --rm -p 3000:3000 nmatsui/hello-world-api.  8c446d43dfc9 focused_wilson
-docker run -d --rm -p 3001:3000 nmatsui/hello-world-api  sweet_sammet
+- docker run -d --rm -p 3000:3000 nmatsui/hello-world-api. 
+  API-1: 
+    Nombre: app1      puerto:3000:3000
+  API-2:
+    Nombre: app2      puerto:3001:3000
+  API-3: 
+    Nombre: app3      puerto:3002:3000
 
 BD
   - PostgreSQL
