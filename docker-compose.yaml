@@ -1,9 +1,9 @@
 version: '0'
 
 services:
-  app:
+  app1:
     build: ./api
     ports:
       - "3000:3000"
     environment:
-      - MESSAGE=Reyes Pinillos, Fabrizio
+      - MESSAGE= ${MESSAGE}
