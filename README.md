@@ -68,26 +68,33 @@ Tipo de red predeterminada, sirve para comunicar a los contenedores entre sí, m
 ## host
 Elimina el aislamiento de red entre los contenedores y la red del equipo.
 ## overlay
-Conecta multiples servicios entre sí, incluso si se encuentran en diferentes nodos o maquinas.
+Conecta múltiples servicios entre sí, incluso si se encuentran en diferentes nodos o maquinas.
 ## ipvlan
 Permite un control total sobre las direcciones IPv4  y IPv6
 ## macvlan
-Permiten asignar una dirección MAC a cada contenedor, pareciendo como un dispositivo más para la red y permitiendole obtener su propia dirección IP.
+Permiten asignar una dirección MAC a cada contenedor, pareciendo como un dispositivo más para la red y permitiéndole obtener su propia dirección IP.
 ## none
-Aisla por completo a un contenedor perdiendo su conección con la red.
+Aísla por completo a un contenedor perdiendo su conexión con la red.
 
-# Tipos de Volumenes
+# Tipos de Volúmenes
 
-## Volumenes anónimos
-Son volumenes temporales generados por la im
-agen, además si este no recibe un nombre y se elimina el contenedor, este almacenamiento tambien se borrará.
-## Volumenes nombrados
-Son volumenes separados de los contenedores, por lo que permiten persistir datos de base de datos o producción, y compartir su contenido entre otros contenedores. En el desarrollo de este laboratorio se implemento esti tipo de volumen para poder persistir el contenido de la Base de Datos.
+## Volumen anónimos
+Son volúmenes temporales generados por la imagen, además si este no recibe un nombre y se elimina el contenedor, este almacenamiento también se borrará.
+## Volúmen nombrados
+Son volúmenes separados de los contenedores, por lo que permiten persistir datos de base de datos o producción, y compartir su contenido entre otros contenedores. En el desarrollo de este laboratorio se implemento este tipo de volumen para poder persistir el contenido de la Base de Datos.
 
-# Creditos
+# Créditos
 
 - Reyes Pinillos, Fabrizio Juan 
 
 # Capturas
 Primer Commit
 
+<img width="738" height="231" alt="Captura de pantalla 2026-09-12 130412" src="https://github.com/user-attachments/assets/c50d6a87-e002-4f27-b091-d09ec880306d" />
+
+Probando la imagen
+
+<img width="708" height="258" alt="Captura de pantalla 2026-09-12 132048" src="https://github.com/user-attachments/assets/add07007-9c88-4ba0-8c28-c03edbbeffbd" />
+
+Primera copia de la API devolviendo mi nombre
+<img width="564" height="177" alt="Captura de pantalla 2026-09-12 140124" src="https://github.com/user-attachments/assets/8690300a-1e38-41f6-8cbc-1fe86d6bdb9e" />
