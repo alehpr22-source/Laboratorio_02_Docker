@@ -49,9 +49,13 @@ Permite un control total sobre las direcciones IPv4  y IPv6
 Permiten asignar una dirección MAC a cada contenedor, pareciendo como un dispositivo más para la red y permitiendole obtener su propia dirección IP.
 ## none
 Aisla por completo a un contenedor perdiendo su conección con la red.
+
 # Tipos de Volumenes
 
-
+## Volumenes anónimos
+Son volumenes temporales, además si este no recibe un nombre y se elimina el contenedor, este almacenamiento tambien se borrará.
+## Volumenes nombrados
+Son volumenes separados de los contenedores, por lo que permiten persistir datos de base de datos o producción, y compartir su contenido entre otros contenedores.
 
 # Creditos
 
