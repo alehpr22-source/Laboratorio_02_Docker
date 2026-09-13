@@ -88,4 +88,6 @@ Son volumenes separados de los contenedores, por lo que permiten persistir datos
 
 - Reyes Pinillos, Fabrizio Juan 
 
-# ETC
+# Capturas
+Primer Commit
+
