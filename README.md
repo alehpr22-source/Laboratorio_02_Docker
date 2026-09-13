@@ -70,13 +70,13 @@ POSTGRES_PASSWORD=<Colocar contraseña>
 # Tipos de Redes / Controladores de Red
 
 ## bridge
-Tipo de red predeterminada, sirve para comunicar a los contenedores entre sí, mediante una red interna en el host.
+Tipo de red predeterminada, crea una red interna en el equipo que sirve para comunicar a los contenedores entre sí mediante sus nombres. 
 ## host
-Elimina el aislamiento de red entre los contenedores y la red del equipo.
+Elimina el aislamiento de red entre los contenedores y la red del equipo, compartiendo una misma dirección IP y puertos.
 ## overlay
-Conecta múltiples servicios entre sí, incluso si se encuentran en diferentes nodos o maquinas.
+Conecta múltiples servicios entre sí, incluso si se encuentran en diferentes nodos o maquinas. Mayormente usado en Docket Swarm.
 ## ipvlan
-Permite un control total sobre las direcciones IPv4  y IPv6
+Permite un control total sobre las direcciones IPv4  y IPv6. Además, permite que que los contenedores tengan una misma dirección MAC de la red del host pero con distintas direcciones IP.
 ## macvlan
 Permiten asignar una dirección MAC a cada contenedor, pareciendo como un dispositivo más para la red y permitiéndole obtener su propia dirección IP.
 ## none
@@ -87,7 +87,7 @@ Aísla por completo a un contenedor perdiendo su conexión con la red.
 ## Volúmenes anónimos
 Son volúmenes temporales generados por la imagen, además si este no recibe un nombre y se elimina el contenedor, este almacenamiento también se borrará.
 ## Volúmenes nombrados
-Son volúmenes separados de los contenedores, por lo que permiten persistir datos de base de datos o producción, y compartir su contenido entre otros contenedores. En el desarrollo de este laboratorio se implemento este tipo de volumen para poder persistir el contenido de la Base de Datos.
+Son volúmenes separados de los contenedores, por lo que permiten persistir datos de base de datos o producción, y compartir su contenido entre otros contenedores. En el desarrollo de este laboratorio se implemento este tipo de volumen para poder persistir el contenido de la Base de Datos, incluso después de borrar postgresql y luego crear otra con el mismo volumen.
 
 # Créditos
 
