@@ -24,15 +24,41 @@ BD
 
 ## Comandos
 
+Usados para construir y verificar los contenedores
 ```bash
 docker compose up -d
+docker compose ps
 ```
+
+Usados para probar las API
+```bash
+curl http://localhost:3000
+curl http://localhost:3001
+curl http://localhost:3002
+```
+
+Usados para el repositorio
+```bash
+git add .
+git commit -m "..."
+git push otrigin main
+```
+
+Usado para ingresar a postgresql
+```bash
+docker compose exec db psql -U <Colocar nombre de usuario> -d postgres
+```
+Crear una Base de Datos
+```psql
+create database prueba
+```
+
 
 ## Configuración por entorno
 
 ```
 MESSAGE=<Colocar nombre>
-POSTGRES_USAR=<Colocar nombre de usuario>
+POSTGRES_USER=<Colocar nombre de usuario>
 POSTGRES_PASSWORD=<Colocar contraseña>
 ```
 # Tipos de Redes / Controladores de Red
@@ -53,12 +79,13 @@ Aisla por completo a un contenedor perdiendo su conección con la red.
 # Tipos de Volumenes
 
 ## Volumenes anónimos
-Son volumenes temporales, además si este no recibe un nombre y se elimina el contenedor, este almacenamiento tambien se borrará.
+Son volumenes temporales generados por la im
+agen, además si este no recibe un nombre y se elimina el contenedor, este almacenamiento tambien se borrará.
 ## Volumenes nombrados
-Son volumenes separados de los contenedores, por lo que permiten persistir datos de base de datos o producción, y compartir su contenido entre otros contenedores.
+Son volumenes separados de los contenedores, por lo que permiten persistir datos de base de datos o producción, y compartir su contenido entre otros contenedores. En el desarrollo de este laboratorio se implemento esti tipo de volumen para poder persistir el contenido de la Base de Datos.
 
 # Creditos
 
-- Reyes Pinillos, Fabrizio
+- Reyes Pinillos, Fabrizio Juan 
 
 # ETC
