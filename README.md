@@ -61,7 +61,9 @@ nombre varchar(20)
 ## Configuración por entorno
 
 ```
-MESSAGE=<Colocar nombre>
+MESSAGE_APP1=<Colocar nombre ...>
+MESSAGE_APP2=<Colocar nombre ...>
+MESSAGE_APP3=>Colocar nombre ...>
 POSTGRES_USER=<Colocar nombre de usuario>
 POSTGRES_PASSWORD=<Colocar contraseña>
 ```
@@ -113,6 +115,10 @@ Las 3 copias de la API
 <img width="1407" height="534" alt="Captura de pantalla 2026-09-12 144214" src="https://github.com/user-attachments/assets/2896167d-9c2e-43e1-9769-85a344c37c50" />
 
 <img width="582" height="433" alt="Captura de pantalla 2026-09-12 144243" src="https://github.com/user-attachments/assets/a7db13e3-4952-4098-b9d4-2dbe9d20cd9f" />
+
+Actualización de los mensajes de cada copia de la API
+
+<img width="572" height="439" alt="Captura de pantalla 2026-09-12 224057" src="https://github.com/user-attachments/assets/6e5ab579-0451-48a9-a082-495fcec37521" />
 
 Configuración de Postgresql
 
